@@ -1,0 +1,36 @@
+.formContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.inputTask {
+  border-radius: 10px;
+  border: 2px solid lightgrey;
+  margin-right: 5px;
+}
+
+.errMsg {
+  display: block;
+  position: absolute;
+  width: 300px;
+  height: 20px;
+  top: 90px;
+  margin: 0 auto;
+  color: red;
+}
+
+.validInput {
+  border: 2px solid #AF7EEB;
+}
+
+.invalidInput {
+  border: 2px solid #ff0000;
+}
+
+.btn {
+  padding: 7px 12px;
+  color: white;
+  border: none;;
+  border-radius: 20px;
+  background-color: #AF7EEB;
+}
