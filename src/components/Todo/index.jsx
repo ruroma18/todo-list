@@ -6,7 +6,6 @@ import reducer from "./reducer";
 import ACTION_TYPES from "./actionTypes";
 
 const Todo = () => {
-  // const [taskList, setTaskList] = useState([]);
 
   const [state, dispatch] = useReducer(reducer, {taskList: []})
   console.log(state)
@@ -24,7 +23,6 @@ const Todo = () => {
     formikBag.resetForm();
   };
 
-  console.log(state);
   return (
     <article className={styles.container}>
       <h1 className={styles.heading}>ToDo List</h1>
