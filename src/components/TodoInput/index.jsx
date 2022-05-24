@@ -4,12 +4,8 @@ import { TODO_TASK_SCHEMA } from "utils/validationSchemas";
 import styles from "./TodoInput.module.scss";
 import cx from "classnames";
 
-const TodoInput = ({ taskList, setTaskList }) => {
-  const submitHandler = ({ text }, formikBag) => {
-    setTaskList([...taskList, { text, isDone: false, id: Date.now() }]);
-
-    formikBag.resetForm();
-  };
+const TodoInput = ({ submitHandler }) => {
+  
 
   return (
     <Formik
